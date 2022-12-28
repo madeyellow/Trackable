@@ -1,9 +1,9 @@
 # What is it?
-The `Trackable` is a generic property wrapper for **Unity projects** that tracks changes of nested property and invokes custom `UnityEvent` **when changes occured**.
+The `Trackable` is a generic property wrapper for **Unity projects** that tracks changes of nested property and invokes custom `UnityEvent` **when changes occurred**.
 
 ## Getting started
 
-For example you have some code like this:
+For example, you have some code like this:
 
 ```csharp
 public bool isGrounded;
@@ -20,7 +20,7 @@ private void Update() {
 }
 ```
 
-You can simplify code to this:
+You can simplify it to this:
 
 ```csharp
 using MadeYellow.Trackables;
@@ -38,7 +38,7 @@ private void Update() {
 }
 ```
 
-Both will work the same, but with `Trackable` you will have power of `UnityEvent` and both readability. Whenever you set new value to `.value` - change tracking will happen automatically.
+Both will work the same, but with `Trackable` you will have the power of `UnityEvent` and code readability. Whenever you set new value to `.value` - change tracking will happen automatically.
 
 ## How to install Trackable to my Unity project?
 
@@ -46,7 +46,7 @@ Use the Unity Package Manager (in Unity’s top menu: **Window > Package Manager
 
 ## Can i check changes not right after value is changed?
 
-Yep! There is built-it `TrackingStrategy.Manual` that can be provided to `Trackable` constructor OR can be choosed ight in Unity editor. You have to call `.Commit();` at desired moment in order to change tracking happen. It will be proper strategy if your script changes variable several times during complex method execution and you want to perform single change tracking at the very end of method (when you have final value calculated) instead of multiple checks.
+Yep! There is built-it `TrackingStrategy.Manual` that can be provided to `Trackable` constructor OR can be assigned right from Unity editor. You'll have to call `.Commit();` at the desired moment in order to change tracking happen. It will be a proper strategy if your script changes variable several times during complex method execution and you want to perform single change tracking at the very end of the method (when you have a final value calculated) instead of multiple checks.
 
 Here's how you may use it:
 
