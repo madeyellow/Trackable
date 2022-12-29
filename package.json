@@ -3,7 +3,7 @@
 	"displayName": "Trackable",
 	"version": "1.0.0",
 	"unity": "2019.1",
-	"author": "Eugene Bukharitsin",
+	"author": "MadeYellow",
 	"description": "Property change tracking for UnityProperty change tracking for Unity",
 	"dependencies": {
 	},
