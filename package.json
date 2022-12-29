@@ -1,0 +1,14 @@
+{
+	"name": "madeyellow.trackable",
+	"displayName": "Trckable",
+	"version": "1.0.0",
+	"unity": "2019.1",
+	"author": "Eugene Bukharitsin",
+	"description": "Property change tracking for UnityProperty change tracking for Unity",
+	"dependencies": {
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/madeyellow/Trackable.git"
+	}
+}
