@@ -83,7 +83,7 @@ namespace MadeYellow.Trackables
         /// </summary>
         public void Commit()
         {
-            if ((previousValue == null && value != null) || !previousValue.Equals(value))
+            if ((previousValue == null && value != null) || (previousValue != null && !previousValue.Equals(value)))
             {
                 valueTimestamp = Time.time;
 
